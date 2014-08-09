@@ -8,5 +8,8 @@ php:
 
 before_script: composer install --dev --prefer-source
 
+script:
+  - ./bin/phpspec run -f pretty
+
 notifications:
   email: tom@tabbi89.com
