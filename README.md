@@ -4,6 +4,8 @@ This is simple implementation of CommandBus in Symfony2
 
 [![Build Status](https://travis-ci.org/tabbi89/CommanderBundle.svg?branch=master)](http://travis-ci.org/tabbi89/CommanderBundle)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d0be0842-7e3c-4e6a-95ac-b18e3d6bceb7/mini.png)](https://insight.sensiolabs.com/projects/d0be0842-7e3c-4e6a-95ac-b18e3d6bceb7)
+
 Documentation
 -------------
 
