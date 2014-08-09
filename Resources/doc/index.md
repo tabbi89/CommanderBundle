@@ -1,6 +1,8 @@
 Getting Started With CommanderBundle
 ====================================
 
+It is based on Jeffrey Way Commander.
+
 ## Installation
 
 Installation is a quick just 4 step process:
