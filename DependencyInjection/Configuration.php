@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('tabbi89_commander');
+        $treeBuilder->root('tabbi89_commander');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
