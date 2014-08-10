@@ -10,5 +10,6 @@ class BasicCommandTranslatorSpec extends ObjectBehavior
     function it_is_initializable()
     {
         $this->shouldHaveType('Tabbi89\CommanderBundle\Command\BasicCommandTranslator');
+        $this->shouldImplement('Tabbi89\CommanderBundle\Command\CommandTranslatorInterface');
     }
 }

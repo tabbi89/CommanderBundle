@@ -17,5 +17,6 @@ class DefaultCommandBusSpec extends ObjectBehavior
     function it_is_initializable()
     {
         $this->shouldHaveType('Tabbi89\CommanderBundle\Command\DefaultCommandBus');
+        $this->shouldImplement('Tabbi89\CommanderBundle\Command\CommandBusInterface');
     }
 }
