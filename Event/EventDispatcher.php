@@ -15,7 +15,7 @@ class EventDispatcher
     /**
      * @var EventDispatcherInterface
      */
-    protected $event;
+    protected $dispatcher;
 
     /**
      * @var LoggerInterface
@@ -23,12 +23,12 @@ class EventDispatcher
     protected $log;
 
     /**
-     * @param EventDispatcherInterface $event
+     * @param EventDispatcherInterface $dispatcher
      * @param LoggerInterface          $log
      */
-    public function __construct(EventDispatcherInterface $event, LoggerInterface $log)
+    public function __construct(EventDispatcherInterface $dispatcher, LoggerInterface $log)
     {
-        $this->event = $event;
+        $this->dispatcher = $dispatcher;
         $this->log   = $log;
     }
 
@@ -42,7 +42,7 @@ class EventDispatcher
         foreach ($events as $event) {
             $eventName = $this->getEventName($event);
 
-            $this->event->dispatch($eventName, $event);
+            $this->dispatcher->dispatch($eventName, $event);
 
             $this->log->info($eventName . ' was fired.');
         }
