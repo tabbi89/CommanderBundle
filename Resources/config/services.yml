@@ -1,16 +1,11 @@
-parameters:
-    tabbi89_commander.command.default_command_bus.class: Tabbi89\CommanderBundle\Command\DefaultCommandBus
-    tabbi89_commander.command.basic_command_translator.class:  Tabbi89\CommanderBundle\Command\BasicCommandTranslator
-    tabbi89_commander.event.event_dispatcher.class: Tabbi89\CommanderBundle\Event\EventDispatcher
-
 services:
     tabbi89_commander.command.default_command_bus:
-        class: %tabbi89_commander.command.default_command_bus.class%
+        class: Tabbi89\CommanderBundle\Command\DefaultCommandBus
         arguments: ["@tabbi89_commander.command.basic_command_translator"]
 
     tabbi89_commander.command.basic_command_translator:
-        class: %tabbi89_commander.command.basic_command_translator.class%
+        class: Tabbi89\CommanderBundle\Command\BasicCommandTranslator
 
     tabbi89_commander.event.event_dispatcher:
-        class: %tabbi89_commander.event.event_dispatcher.class%
+        class: Tabbi89\CommanderBundle\Event\EventDispatcher
         arguments: ["@event_dispatcher", "@logger"]
