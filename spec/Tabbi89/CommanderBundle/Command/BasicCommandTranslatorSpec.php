@@ -12,4 +12,13 @@ class BasicCommandTranslatorSpec extends ObjectBehavior
         $this->shouldHaveType('Tabbi89\CommanderBundle\Command\BasicCommandTranslator');
         $this->shouldImplement('Tabbi89\CommanderBundle\Command\CommandTranslatorInterface');
     }
+
+    function it_should_translate_simple_command_to_simple_hander()
+    {
+        $this->toCommandHandler(new SimpleCommand())->shouldBe('SimpleHandler');
+    }
+}
+
+class SimpleCommand
+{
 }
