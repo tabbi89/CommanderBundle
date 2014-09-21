@@ -1,7 +1,7 @@
 Getting Started With CommanderBundle
 ====================================
 
-It is based on Jeffrey Way Commander.
+It is based on [https://github.com/laracasts/Commander](Jeffrey Way Commander).
 
 ## Installation
 
