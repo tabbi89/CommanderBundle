@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "phpspec/phpspec": "~2.0",
-        "phpunit/phpunit": "~4.1.5"
+        "phpunit/phpunit": "~4.2"
     },
     "autoload": {
         "psr-4": { "Tabbi89\\CommanderBundle\\": "" }
@@ -28,6 +28,5 @@
         "branch-alias": {
             "dev-master": "1.1-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
