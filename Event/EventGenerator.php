@@ -3,7 +3,7 @@
 namespace Tabbi89\CommanderBundle\Event;
 
 /**
- * Trait EventGenerator
+ * Aggregates can use this trait to raise and harbor events to be released later to the dispatcher.
  *
  * @package Tabbi89\CommanderBundle\Event
  */
