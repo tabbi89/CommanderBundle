@@ -16,7 +16,7 @@ interface CommandTranslatorInterface
      *
      * @return mixed
      *
-     * @throws Exception
+     * @throws \Exception
      */
     public function toCommandHandler($command);
 }

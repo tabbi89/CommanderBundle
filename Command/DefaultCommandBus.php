@@ -10,19 +10,19 @@ namespace Tabbi89\CommanderBundle\Command;
 class DefaultCommandBus implements CommandBusInterface
 {
     /**
-     * @var object|CommandTranslator
+     * @var CommandTranslatorInterface
      */
     protected $commandTranslator;
 
     /**
-     * List of all registrated handlers
+     * List of all registered handlers
      *
      * @var array
      */
     protected $handlers;
 
     /**
-     * @param CommandTranslator $commandTranslator
+     * @param CommandTranslatorInterface $commandTranslator
      */
     public function __construct(CommandTranslatorInterface $commandTranslator)
     {
@@ -53,7 +53,7 @@ class DefaultCommandBus implements CommandBusInterface
         $handler = $this->commandTranslator->toCommandHandler($command);
 
         if (!array_key_exists($handler, $this->handlers)) {
-            throw new HandlerNotRegisteredException("Handler [$handler] not registrated");
+            throw new HandlerNotRegisteredException("Handler [$handler] not registered");
         }
 
         return $this->handlers[$handler]->handle($command);
