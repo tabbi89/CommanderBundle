@@ -1,6 +1,6 @@
 # CommanderBundle
 
-This is simple implementation of CommandBus in Symfony2
+This is simple implementation of CommandBus in Symfony2. It has nothing much with CQRS it is simple implementation of handling "Messages/Commands" with Symfony2.
 
 [![Build Status](https://travis-ci.org/tabbi89/CommanderBundle.svg?branch=master)](http://travis-ci.org/tabbi89/CommanderBundle)
 
